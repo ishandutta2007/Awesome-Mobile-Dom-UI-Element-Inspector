@@ -9,7 +9,7 @@
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
   <a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Mobile-Dom-UI-Element-Inspector/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Mobile-Dom-UI-Element-Inspector/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Mobile-Dom-UI-Element-Inspector?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Mobile-Dom-UI-Element-Inspector/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Mobile-Dom-UI-Element-Inspector?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
@@ -71,115 +71,115 @@ Commercial, cloud-hosted Mobile DOM, view hierarchy, and element inspector platf
 
 ## 🟩 Open-Source Software 🔓
 
-Self-hosted, community-driven Mobile DOM and UI element inspector tools. Sorted in descending order by GitHub star count.
+Self-hosted, community-driven Mobile DOM and UI element inspector tools. Sorted in descending order by GitHub Stars_Count.
 
 ### 🐬 Flipper
-[![GitHub stars](https://img.shields.io/github/stars/meta/flipper?style=social&color=white)](https://github.com/meta/flipper/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/meta/flipper?style=social&color=white)](https://github.com/meta/flipper/stargazers)
 - **Repository:** [meta/flipper](https://github.com/meta/flipper)
 - **Stack:** TypeScript / C++ / Electron | **License:** MIT
 - **Platform:** 🍎 iOS, 🤖 Android, ⚛️ React Native
 - **Overview:** Flipper is Meta's extensible desktop debugging platform for mobile app development. Its Layout Inspector lets developers explore the complete native view hierarchy (UIKit, Android View/Compose, React Native components), inspect layout properties in real time, visualize boundaries, and modify layout attributes on the fly.
 
 ### 🕵️ Appium Inspector
-[![GitHub stars](https://img.shields.io/github/stars/appium/appium-inspector?style=social&color=white)](https://github.com/appium/appium-inspector/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/appium/appium-inspector?style=social&color=white)](https://github.com/appium/appium-inspector/stargazers)
 - **Repository:** [appium/appium-inspector](https://github.com/appium/appium-inspector)
 - **Stack:** Electron / React / TypeScript | **License:** Apache-2.0
 - **Platform:** 🤖 Android, 🍎 iOS, 🪟 Windows, 🍏 macOS
 - **Overview:** The official GUI inspector for Appium sessions. Displays the interactive view hierarchy, element screenshot overlays, detailed accessibility attributes, and automatic locator suggestions (ID, accessibility ID, XPath, UIAutomator, iOS Class Chain). Standalone desktop app available across macOS, Windows, and Linux.
 
 ### 👀 Lookin
-[![GitHub stars](https://img.shields.io/github/stars/hughkli/Lookin?style=social&color=white)](https://github.com/hughkli/Lookin/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/hughkli/Lookin?style=social&color=white)](https://github.com/hughkli/Lookin/stargazers)
 - **Repository:** [hughkli/Lookin](https://github.com/hughkli/Lookin)
 - **Stack:** Objective-C / Swift / macOS App | **License:** GPL-3.0
 - **Platform:** 🍎 iOS
 - **Overview:** A premier free macOS app for iOS view debugging and inspection, serving as a powerful open alternative to Reveal and Xcode View Debugger. Features 2D/3D hierarchy inspection, live property editing, layer wireframing, and performance metrics for UIKit applications.
 
 ### 🌐 WEditor
-[![GitHub stars](https://img.shields.io/github/stars/alibaba/web-editor?style=social&color=white)](https://github.com/alibaba/web-editor/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/alibaba/web-editor?style=social&color=white)](https://github.com/alibaba/web-editor/stargazers)
 - **Repository:** [alibaba/web-editor](https://github.com/alibaba/web-editor)
 - **Stack:** Python / Tornado / Web UI | **License:** Apache-2.0
 - **Platform:** 🤖 Android, 🍎 iOS
 - **Overview:** Web-based UI inspector and script editor created for `uiautomator2` and `facebook-wda`. Captures real-time device screen dumps, renders interactive node trees, and allows engineers to test and generate robust XPath and UI selectors directly inside any web browser.
 
 ### 📐 ViewMonitor
-[![GitHub stars](https://img.shields.io/github/stars/daisuke0131/ViewMonitor?style=social&color=white)](https://github.com/daisuke0131/ViewMonitor/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/daisuke0131/ViewMonitor?style=social&color=white)](https://github.com/daisuke0131/ViewMonitor/stargazers)
 - **Repository:** [daisuke0131/ViewMonitor](https://github.com/daisuke0131/ViewMonitor)
 - **Stack:** Swift | **License:** MIT
 - **Platform:** 🍎 iOS
 - **Overview:** An in-app visual layout inspector for iOS that operates directly on device. It inspects UIKit and SwiftUI views, frames, layout margins, padding, spacing, view overlaps, and intrinsic content sizes without requiring tethered desktop software.
 
 ### ⚡ uiautodev
-[![GitHub stars](https://img.shields.io/github/stars/codeskyblue/uiautodev?style=social&color=white)](https://github.com/codeskyblue/uiautodev/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/codeskyblue/uiautodev?style=social&color=white)](https://github.com/codeskyblue/uiautodev/stargazers)
 - **Repository:** [codeskyblue/uiautodev](https://github.com/codeskyblue/uiautodev)
 - **Stack:** Python / Prebuilt Binary / Web UI | **License:** MIT
 - **Platform:** 🤖 Android, 🍎 iOS, 🌐 HarmonyOS
 - **Overview:** Next-generation browser-based mobile UI viewer and inspector supporting Android, iOS, and HarmonyOS. Features tree-based element inspection, automatic XPath locator generation, offline snapshot analysis, and standalone client binaries with zero setup.
 
 ### 🐒 Macaca App Inspector
-[![GitHub stars](https://img.shields.io/github/stars/macacajs/app-inspector?style=social&color=white)](https://github.com/macacajs/app-inspector/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/macacajs/app-inspector?style=social&color=white)](https://github.com/macacajs/app-inspector/stargazers)
 - **Repository:** [macacajs/app-inspector](https://github.com/macacajs/app-inspector)
 - **Stack:** Node.js / JavaScript | **License:** MIT
 - **Platform:** 🤖 Android, 🍎 iOS
 - **Overview:** Macaca's web-based mobile UI viewer and element inspector. Provides interactive DOM and UI hierarchy viewing in a browser, element attribute inspection, and locator code generation for cross-platform automation suites.
 
 ### 🔍 UInspector
-[![GitHub stars](https://img.shields.io/github/stars/YvesCheung/UInspector?style=social&color=white)](https://github.com/YvesCheung/UInspector/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/YvesCheung/UInspector?style=social&color=white)](https://github.com/YvesCheung/UInspector/stargazers)
 - **Repository:** [YvesCheung/UInspector](https://github.com/YvesCheung/UInspector)
 - **Stack:** Kotlin / Java | **License:** Apache-2.0
 - **Platform:** 🤖 Android
 - **Overview:** An on-device UI inspection library for Android that traverses view hierarchies at runtime. Tap any screen element to reveal parent/child relationships, examine LayoutParams, inspect view backgrounds, fonts, and view lifecycle states right on the device screen.
 
 ### 📱 UI Viewer
-[![GitHub stars](https://img.shields.io/github/stars/codematrixer/ui-viewer?style=social&color=white)](https://github.com/codematrixer/ui-viewer/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/codematrixer/ui-viewer?style=social&color=white)](https://github.com/codematrixer/ui-viewer/stargazers)
 - **Repository:** [codematrixer/ui-viewer](https://github.com/codematrixer/ui-viewer)
 - **Stack:** Python / Web UI | **License:** MIT
 - **Platform:** 🤖 Android, 🍎 iOS, 🌐 HarmonyOS NEXT
 - **Overview:** A lightweight UI hierarchy inspector for mobile applications with native support for Android, iOS, and HarmonyOS NEXT. Visualizes screen dumps alongside control trees, extracts selector properties, and calculates unique locators.
 
 ### ✂️ Cutaway
-[![GitHub stars](https://img.shields.io/github/stars/nothingsh/Cutaway?style=social&color=white)](https://github.com/nothingsh/Cutaway/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/nothingsh/Cutaway?style=social&color=white)](https://github.com/nothingsh/Cutaway/stargazers)
 - **Repository:** [nothingsh/Cutaway](https://github.com/nothingsh/Cutaway)
 - **Stack:** Swift / macOS Native | **License:** MIT
 - **Platform:** 🍎 iOS
 - **Overview:** A standalone macOS application for inspecting the layer hierarchy of iOS apps. Renders visual 3D exploded views of views and layers, helping developers uncover hidden views, clip-to-bounds bugs, and incorrect z-index ordering.
 
 ### 🤖 Android Inspector
-[![GitHub stars](https://img.shields.io/github/stars/cmzf/android-inspector?style=social&color=white)](https://github.com/cmzf/android-inspector/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/cmzf/android-inspector?style=social&color=white)](https://github.com/cmzf/android-inspector/stargazers)
 - **Repository:** [cmzf/android-inspector](https://github.com/cmzf/android-inspector)
 - **Stack:** Java / Web UI | **License:** Apache-2.0
 - **Platform:** 🤖 Android
 - **Overview:** A productive UI layout inspector app for Android and Appium with an embedded HTTP server. Serves as a modern, high-speed drop-in replacement for the legacy `uiautomatorviewer` (`monitor.bat`), providing instant layout dumps and XPath queries.
 
 ### 🌳 Treescope
-[![GitHub stars](https://img.shields.io/github/stars/everettjf/treescope?style=social&color=white)](https://github.com/everettjf/treescope/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/everettjf/treescope?style=social&color=white)](https://github.com/everettjf/treescope/stargazers)
 - **Repository:** [everettjf/treescope](https://github.com/everettjf/treescope)
 - **Stack:** Swift / TypeScript | **License:** MIT
 - **Platform:** 🍎 iOS, 🍏 macOS
 - **Overview:** An open-source runtime view inspector for UIKit, AppKit, and SwiftUI viewed entirely inside a web browser. Serves as a zero-install alternative to Lookin with first-class SwiftUI support, unwrapping complex views, `@State`, and modifier pipelines.
 
 ### ⚛️ React Native Element Inspector
-[![GitHub stars](https://img.shields.io/github/stars/mabdinasira/react-native-element-inspector?style=social&color=white)](https://github.com/mabdinasira/react-native-element-inspector/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/mabdinasira/react-native-element-inspector?style=social&color=white)](https://github.com/mabdinasira/react-native-element-inspector/stargazers)
 - **Repository:** [mabdinasira/react-native-element-inspector](https://github.com/mabdinasira/react-native-element-inspector)
 - **Stack:** React Native / TypeScript | **License:** MIT
 - **Platform:** 🍎 iOS, 🤖 Android (React Native)
 - **Overview:** An on-device "Inspect Element" developer utility for React Native apps. Tap any UI component to view CSS styles, toggle properties in real time, examine box-model margins/padding overlays, and jump to source code definitions without external native dependencies.
 
 ### 🔭 ViewScope
-[![GitHub stars](https://img.shields.io/github/stars/wangwanjie/ViewScope?style=social&color=white)](https://github.com/wangwanjie/ViewScope/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/wangwanjie/ViewScope?style=social&color=white)](https://github.com/wangwanjie/ViewScope/stargazers)
 - **Repository:** [wangwanjie/ViewScope](https://github.com/wangwanjie/ViewScope)
 - **Stack:** Swift / AppKit | **License:** MIT
 - **Platform:** 🍏 macOS, 🍎 iOS
 - **Overview:** A macOS desktop utility for inspecting and visualizing UI view hierarchies, designed to help developers debug and analyze app layouts in real time with 2D/3D hierarchy wireframing and attribute panes.
 
 ### 🐕 UiHound
-[![GitHub stars](https://img.shields.io/github/stars/duzitian-code/UIHound?style=social&color=white)](https://github.com/duzitian-code/UIHound/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/duzitian-code/UIHound?style=social&color=white)](https://github.com/duzitian-code/UIHound/stargazers)
 - **Repository:** [duzitian-code/UIHound](https://github.com/duzitian-code/UIHound)
 - **Stack:** Python / FastAPI / Web UI | **License:** Open Source
 - **Platform:** 🤖 Android
 - **Overview:** A local browser-based Android UI debugging and automation workbench for HIL testing. Features interactive hierarchy inspection, unique locator generation, remote device control via scrcpy, pixel color sampling, and offline snapshot viewing.
 
 ### 🎯 ui-finder
-[![GitHub stars](https://img.shields.io/github/stars/kdiitg/ui_finder?style=social&color=white)](https://github.com/kdiitg/ui_finder/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/kdiitg/ui_finder?style=social&color=white)](https://github.com/kdiitg/ui_finder/stargazers)
 - **Repository:** [kdiitg/ui_finder](https://github.com/kdiitg/ui_finder)
 - **Stack:** Python | **License:** Open Source
 - **Platform:** 🤖 Android
@@ -238,7 +238,7 @@ Contributions are warmly welcome! If you know of an actively maintained mobile D
 
 1. 🍴 Fork this repository.
 2. 📝 Add the tool to the appropriate section in alphabetical or sorted order.
-3. 🔗 Include the repository URL, star badge (`shields.io` social style), platform support, and a concise 1–2 sentence description.
+3. 🔗 Include the repository URL, Stars_Badge (`shields.io` social style), platform support, and a concise 1–2 sentence description.
 4. 🚀 Submit a Pull Request with a clear description of why the tool is valuable to mobile engineers.
 
 ---

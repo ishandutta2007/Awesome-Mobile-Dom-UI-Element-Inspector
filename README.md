@@ -71,7 +71,7 @@ Commercial, cloud-hosted Mobile DOM, view hierarchy, and element inspector platf
 
 ## 🟩 Open-Source Software 🔓
 
-Self-hosted, community-driven Mobile DOM and UI element inspector tools. Sorted in descending order by GitHub Stars_Count.
+Self-hosted, community-driven Mobile DOM and UI element inspector tools. Sorted in descending order by GitHub_Stars_Count.
 
 ### 🐬 Flipper
 [![GitHub_Stars](https://img.shields.io/github/stars/meta/flipper?style=social&color=white)](https://github.com/meta/flipper/stargazers)

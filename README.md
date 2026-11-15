@@ -1,195 +1,226 @@
-# Awesome-Mobile-Dom-UI-Element-Inspector
-
 # Awesome Mobile DOM & UI Element Inspector
 
-> A curated list of top Mobile DOM and UI Element Inspector platforms — both SaaS/Hosted commercial testing suites and open-source alternatives for inspecting view hierarchies, finding element locators, and debugging mobile app interfaces.
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Mobile-Dom-UI-Element-Inspector/pulls)
+[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Mobile-Dom-UI-Element-Inspector?style=social)](https://github.com/ishandutta2007/Awesome-Mobile-Dom-UI-Element-Inspector/stargazers)
+
+> A curated list of top **Mobile DOM & UI Element Inspector** platforms, view hierarchy debuggers, XPath/locator generators, and layout inspection developer tools — covering commercial cloud device farms, SaaS testing suites, and open-source software for Android, iOS, React Native, and HarmonyOS.
+>
 > 🌟 Star this repo if you find it useful! 🌟
 
 ---
 
 ## 📋 Table of Contents
 
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [BrowserStack Inspector](#browserstack-inspector)
-  - [Appium Inspector](#appium-inspector)
-  - [Safari Web Inspector](#safari-web-inspector)
-  - [Android UI Automator Viewer](#android-ui-automator-viewer)
 - [Open-Source Software](#-open-source-software)
-  - [UiHound](#uihound)
-  - [ViewScope](#viewscope)
+  - [Flipper](#flipper)
+  - [Appium Inspector](#appium-inspector)
+  - [Lookin](#lookin)
+  - [WEditor](#weditor)
+  - [ViewMonitor](#viewmonitor)
   - [uiautodev](#uiautodev)
-  - [ui-finder](#ui-finder)
-  - [Smart XPath Locator](#smart-xpath-locator)
+  - [Macaca App Inspector](#macaca-app-inspector)
+  - [UInspector](#uinspector)
+  - [UI Viewer](#ui-viewer)
+  - [Cutaway](#cutaway)
+  - [Android Inspector](#android-inspector)
   - [Treescope](#treescope)
-  - [hm-ui-viewer](#hm-ui-viewer)
-  - [react-native-element-inspector](#react-native-element-inspector)
+  - [React Native Element Inspector](#react-native-element-inspector)
+  - [ViewScope](#viewscope)
+  - [UiHound](#uihound)
+  - [ui-finder](#ui-finder)
+- [Feature Comparison Matrix](#-feature-comparison-matrix)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+---
+
+## 📈 Sector Overview & Market Dynamics
+
+The global **Mobile Application Testing and Quality Engineering Market** is valued between **$8.6 Billion and $11.7 Billion** (projected to exceed $33 Billion by 2035 at an estimated CAGR of 13%–16%). 
+
+The sector is **moderately fragmented**: while massive capital expenditure requirements for physical real-device clouds concentrate hosted infrastructure and device farms among a few multi-billion-dollar leaders (such as BrowserStack and Sauce Labs), the tooling and inspector ecosystem remains dynamic and competitive, with nimble innovators (LambdaTest, Kobiton) and open-source automation standards (Appium, Flipper, WEditor) continuously evolving to address emerging mobile frameworks, OS updates, and AI-driven locator generation.
 
 ---
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted Mobile DOM and UI Element Inspector platforms. These are not open-source but are included as reference points for feature comparison.
+Commercial, cloud-hosted Mobile DOM, view hierarchy, and element inspector platforms. The table below is sorted in descending order by company scale (valuation and annual revenue).
 
-### BrowserStack Inspector
-**Type:** Cloud-based mobile app and web element inspection
-BrowserStack provides interactive inspection capabilities within its real-device cloud, allowing teams to inspect DOM elements, view hierarchies, and debug mobile web and native app interfaces remotely. It is the natural choice for teams already using BrowserStack for cross-browser and mobile testing.
-
-### Appium Inspector
-**Type:** GUI inspector for Appium sessions
-Appium Inspector is the official GUI tool for inspecting mobile app elements during Appium sessions, displaying the view hierarchy, element attributes, and locator suggestions. It is the standard companion tool for Appium automation, with a standalone desktop application available for macOS, Windows, and Linux [citation:9].
-
-### Safari Web Inspector
-**Type:** WebKit-based inspection for iOS and macOS
-Safari Web Inspector provides DOM, CSS, and JavaScript debugging for web content in Safari and iOS WebViews. It is the native inspection tool for Apple platforms, requiring a Mac for full iOS device inspection.
-
-### Android UI Automator Viewer
-**Type:** Legacy Android view hierarchy inspector
-UI Automator Viewer was a standalone tool in the Android SDK for inspecting view hierarchies and generating uiautomator locators. It has been deprecated in favor of newer tools like Appium Inspector and Layout Inspector, but remains referenced in older workflows.
+| Platform | Starting Tier Pricing | Free Tier / Trial Limit | Company Scale (Valuation / Revenue) | Target OS & Coverage | Key Strengths |
+|----------|-----------------------|-------------------------|------------------------------------|----------------------|---------------|
+| **[BrowserStack](https://www.browserstack.com/)** | **$29/month** (Live Web, billed annually) / **$39/month** (App Live) | **Free Trial:** 30 minutes manual Live/App Live testing, 100 screenshots, 60–100 automated test minutes | **$4.0B Valuation** (~$200M+ est. ARR) | Android, iOS, Mobile Web, Desktop | Real-device cloud with live interactive DOM inspector, device rotation, geolocation, and Percy visual testing. |
+| **[Sauce Labs](https://saucelabs.com/)** | **$199/month** (Live & Real Device Testing, billed annually) | **28-Day Free Trial:** 60 automated & live test minutes, virtual/real mobile devices, local Sauce Connect tunnel | **$613M Valuation** (~$70M–$90M est. ARR) | Android, iOS, Simulators, Emulators | Live DOM element inspector, deep Appium integration, enterprise device clouds, test orchestration, and error analytics. |
+| **[LambdaTest](https://www.lambdatest.com/)** | **$15/month** (Live Testing) / **$79/month** (Mobile App & Web Automation) | **Free Forever Plan:** 60 minutes/month live browser testing (10-min sessions), 10 responsive tests, 1 parallel session | **$400M Valuation** (~$20M–$25M est. ARR) | Android, iOS, Mobile Browsers, Real Devices | Web-based real-time mobile DOM inspector, interactive debugging, KaneAI automation, and low-latency virtual cloud. |
+| **[Kobiton](https://kobiton.com/)** | **$83/month** (Startup Plan with ~500 real-device minutes/month) | **14-Day Free Trial:** 300 minutes on real mobile devices, sample AI script generation, no credit card required | **$65M Valuation** (~$27M est. ARR) | Android, iOS, Tablets, Wearables | Embedded Session Explorer inspector with live XPath capture, visual validations, and bidirectional Appium Inspector integration. |
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Mobile DOM and UI Element Inspector tools. The open-source ecosystem spans **Android UI inspection web tools**, **cross-platform inspectors with code generation**, **iOS view tree inspectors**, and **in-app React Native element inspectors**.
+Self-hosted, community-driven Mobile DOM and UI element inspector tools. Sorted in descending order by GitHub star count.
 
-### UiHound
-**Stack:** Python / FastAPI / Web UI | **License:** Open Source (PyPI)
-UiHound is a local web tool for Android debugging and UI automation, providing element inspection, locator finding, remote device control, and screenshot/recording capture [citation:2][citation:10]. Key capabilities include:
-- **Element inspection**: Browse the UI hierarchy, view element properties, coordinates, and screen highlights
-- **Locator finding**: Search for and copy u2 selectors or XPath expressions, prioritizing unique attributes
-- **Remote control**: scrcpy-based live screen with taps, swipes, long presses, and navigation buttons
-- **Color sampling**: Pixel magnifier with HEX, RGB, HSB, and OpenCV HSV values
-- **Screenshot and recording**: Full-screen, element, and region screenshots plus WebM recording
-- **Offline analysis**: Import an image and UI XML to inspect without a connected device
+### Flipper
+[![GitHub stars](https://img.shields.io/github/stars/meta/flipper?style=social&color=white)](https://github.com/meta/flipper/stargazers)
+- **Repository:** [meta/flipper](https://github.com/meta/flipper)
+- **Stack:** TypeScript / C++ / Electron | **License:** MIT
+- **Platform:** iOS, Android, React Native
+- **Overview:** Flipper is Meta's extensible desktop debugging platform for mobile app development. Its Layout Inspector lets developers explore the complete native view hierarchy (UIKit, Android View/Compose, React Native components), inspect layout properties in real time, visualize boundaries, and modify layout attributes on the fly.
 
-It runs locally at `http://127.0.0.1:8000` after `pip install uihound` [citation:2].
-**Best for:** Android developers and QA engineers wanting a local, feature-rich UI inspector with remote control and locator generation, accepting the Python/ADB setup.
+### Appium Inspector
+[![GitHub stars](https://img.shields.io/github/stars/appium/appium-inspector?style=social&color=white)](https://github.com/appium/appium-inspector/stargazers)
+- **Repository:** [appium/appium-inspector](https://github.com/appium/appium-inspector)
+- **Stack:** Electron / React / TypeScript | **License:** Apache-2.0
+- **Platform:** Android, iOS, Windows, macOS
+- **Overview:** The official GUI inspector for Appium sessions. Displays the interactive view hierarchy, element screenshot overlays, detailed accessibility attributes, and automatic locator suggestions (ID, accessibility ID, XPath, UIAutomator, iOS Class Chain). Standalone desktop app available across macOS, Windows, and Linux.
 
-### ViewScope
-**Stack:** Vue.js 3 / FastAPI / Python | **License:** MIT
-ViewScope is a modern Android UI element inspector similar to weditor, built with Vue.js 3 and FastAPI [citation:3]. Key features include:
-- **Device management**: Auto-detect and manage Android devices via ADB
-- **Real-time screenshots**: High-quality PNG capture with an interactive SVG layer
-- **Element selection**: Click any UI element to view details in the right panel
-- **Code generation**: Auto-generate uiautomator2 locator code with one-click copy
-- **UI hierarchy view**: Complete tree structure with search functionality
-- **Multiple locator strategies**: Resource-ID, text, XPath, and more
+### Lookin
+[![GitHub stars](https://img.shields.io/github/stars/hughkli/Lookin?style=social&color=white)](https://github.com/hughkli/Lookin/stargazers)
+- **Repository:** [hughkli/Lookin](https://github.com/hughkli/Lookin)
+- **Stack:** Objective-C / Swift / macOS App | **License:** GPL-3.0
+- **Platform:** iOS
+- **Overview:** A premier free macOS app for iOS view debugging and inspection, serving as a powerful open alternative to Reveal and Xcode View Debugger. Features 2D/3D hierarchy inspection, live property editing, layer wireframing, and performance metrics for UIKit applications.
 
-It launches with `pip install ViewScope` and `viewscope`, starting a backend on port 8060+ and opening a browser interface [citation:3].
-**Best for:** Android automation engineers wanting a modern web-based inspector with uiautomator2 code generation, accepting the Python/ADB dependency.
+### WEditor
+[![GitHub stars](https://img.shields.io/github/stars/alibaba/web-editor?style=social&color=white)](https://github.com/alibaba/web-editor/stargazers)
+- **Repository:** [alibaba/web-editor](https://github.com/alibaba/web-editor)
+- **Stack:** Python / Tornado / Web UI | **License:** Apache-2.0
+- **Platform:** Android, iOS
+- **Overview:** Web-based UI inspector and script editor created for `uiautomator2` and `facebook-wda`. Captures real-time device screen dumps, renders interactive node trees, and allows engineers to test and generate robust XPath and UI selectors directly inside any web browser.
+
+### ViewMonitor
+[![GitHub stars](https://img.shields.io/github/stars/daisuke0131/ViewMonitor?style=social&color=white)](https://github.com/daisuke0131/ViewMonitor/stargazers)
+- **Repository:** [daisuke0131/ViewMonitor](https://github.com/daisuke0131/ViewMonitor)
+- **Stack:** Swift | **License:** MIT
+- **Platform:** iOS
+- **Overview:** An in-app visual layout inspector for iOS that operates directly on device. It inspects UIKit and SwiftUI views, frames, layout margins, padding, spacing, view overlaps, and intrinsic content sizes without requiring tethered desktop software.
 
 ### uiautodev
-**Stack:** Python / Prebuilt server binary | **License:** Open Source (PyPI)
-uiautodev is a UI Inspector for **Android, iOS, and Harmony**, providing element property inspection and auto-generated XPath and scripts [citation:6]. Key characteristics:
-- **Multi-platform support**: Android, iOS, and HarmonyOS
-- **Prebuilt server binary**: `uiauto.dev` downloads a cached server binary and opens a browser interface
-- **Offline mode**: `uiautodev server --offline` caches all frontend resources for use without internet
-- **Driver options**: Defaults to uiautomator2, with an ADB driver alternative via environment variable
+[![GitHub stars](https://img.shields.io/github/stars/codeskyblue/uiautodev?style=social&color=white)](https://github.com/codeskyblue/uiautodev/stargazers)
+- **Repository:** [codeskyblue/uiautodev](https://github.com/codeskyblue/uiautodev)
+- **Stack:** Python / Prebuilt Binary / Web UI | **License:** MIT
+- **Platform:** Android, iOS, HarmonyOS
+- **Overview:** Next-generation browser-based mobile UI viewer and inspector supporting Android, iOS, and HarmonyOS. Features tree-based element inspection, automatic XPath locator generation, offline snapshot analysis, and standalone client binaries with zero setup.
 
-It is positioned as a cross-platform alternative to platform-specific inspectors [citation:6].
-**Best for:** Teams needing a single inspector for Android, iOS, and HarmonyOS, accepting the prebuilt binary distribution model.
+### Macaca App Inspector
+[![GitHub stars](https://img.shields.io/github/stars/macacajs/app-inspector?style=social&color=white)](https://github.com/macacajs/app-inspector/stargazers)
+- **Repository:** [macacajs/app-inspector](https://github.com/macacajs/app-inspector)
+- **Stack:** Node.js / JavaScript | **License:** MIT
+- **Platform:** Android, iOS
+- **Overview:** Macaca's web-based mobile UI viewer and element inspector. Provides interactive DOM and UI hierarchy viewing in a browser, element attribute inspection, and locator code generation for cross-platform automation suites.
 
-### ui-finder
-**Stack:** Python / matplotlib / pyperclip | **License:** Open Source (PyPI)
-ui-finder is a plug-and-play Python-based visual tool for inspecting Android app UI directly from a phone [citation:5]. Key features include:
-- **Zero setup**: Auto-installs ADB and Python dependencies on first run
-- **Live inspection**: Screenshot + hierarchy dump with click-to-highlight element selection
-- **Dropdown filters**: Filter by class, resource-id, text, or bounds
-- **One-click copy**: Copy element details to clipboard
-- **Overlap handling**: Press `n` to cycle overlapping elements
-- **Cross-platform**: Windows, Linux, and macOS
+### UInspector
+[![GitHub stars](https://img.shields.io/github/stars/YvesCheung/UInspector?style=social&color=white)](https://github.com/YvesCheung/UInspector/stargazers)
+- **Repository:** [YvesCheung/UInspector](https://github.com/YvesCheung/UInspector)
+- **Stack:** Kotlin / Java | **License:** Apache-2.0
+- **Platform:** Android
+- **Overview:** An on-device UI inspection library for Android that traverses view hierarchies at runtime. Tap any screen element to reveal parent/child relationships, examine LayoutParams, inspect view backgrounds, fonts, and view lifecycle states right on the device screen.
 
-It installs via `pip install ui_finder` and runs offline after the first execution [citation:5].
-**Best for:** Developers wanting a truly plug-and-play Android inspector that auto-installs its dependencies, accepting a simpler feature set than UiHound or ViewScope.
+### UI Viewer
+[![GitHub stars](https://img.shields.io/github/stars/codematrixer/ui-viewer?style=social&color=white)](https://github.com/codematrixer/ui-viewer/stargazers)
+- **Repository:** [codematrixer/ui-viewer](https://github.com/codematrixer/ui-viewer)
+- **Stack:** Python / Web UI | **License:** MIT
+- **Platform:** Android, iOS, HarmonyOS NEXT
+- **Overview:** A lightweight UI hierarchy inspector for mobile applications with native support for Android, iOS, and HarmonyOS NEXT. Visualizes screen dumps alongside control trees, extracts selector properties, and calculates unique locators.
 
-### Smart XPath Locator
-**Stack:** Windows executable (likely .NET) | **License:** MIT
-Smart XPath Locator is an advanced Android XML layout inspector and interactive XPath generator for Windows [citation:1]. Key features include:
-- **Live device sync**: Connect via USB, Ethernet, or wireless ADB to inspect element hierarchies in real-time
-- **Interactive canvas**: Click elements on a screenshot to highlight boundaries and load properties
-- **XPath generation**: Copy optimized locators with one click
-- **Excel export**: Generate spreadsheets containing element boundaries and cropped image snips
-- **Offline inspection**: Load local screenshot and XML/UIX files
+### Cutaway
+[![GitHub stars](https://img.shields.io/github/stars/nothingsh/Cutaway?style=social&color=white)](https://github.com/nothingsh/Cutaway/stargazers)
+- **Repository:** [nothingsh/Cutaway](https://github.com/nothingsh/Cutaway)
+- **Stack:** Swift / macOS Native | **License:** MIT
+- **Platform:** iOS
+- **Overview:** A standalone macOS application for inspecting the layer hierarchy of iOS apps. Renders visual 3D exploded views of views and layers, helping developers uncover hidden views, clip-to-bounds bugs, and incorrect z-index ordering.
 
-It is distributed as a Windows installer (`SmartXPathLocator_Setup.exe`) [citation:1].
-**Best for:** Windows-based Android QA teams wanting a desktop inspector with Excel export capabilities, accepting the Windows-only limitation.
+### Android Inspector
+[![GitHub stars](https://img.shields.io/github/stars/cmzf/android-inspector?style=social&color=white)](https://github.com/cmzf/android-inspector/stargazers)
+- **Repository:** [cmzf/android-inspector](https://github.com/cmzf/android-inspector)
+- **Stack:** Java / Web UI | **License:** Apache-2.0
+- **Platform:** Android
+- **Overview:** A productive UI layout inspector app for Android and Appium with an embedded HTTP server. Serves as a modern, high-speed drop-in replacement for the legacy `uiautomatorviewer` (`monitor.bat`), providing instant layout dumps and XPath queries.
 
 ### Treescope
-**Stack:** Swift / TypeScript / Browser viewer | **License:** MIT
-Treescope is an open-source runtime view inspector for **UIKit, AppKit, and SwiftUI**, viewed in a browser [citation:8]. Key characteristics:
-- **First-class SwiftUI inspection**: Opens `any View`, unwraps `ModifiedContent`, `TupleView`, and `_ConditionalContent`, reads `@State` and modifiers
-- **Zero-install viewer**: The inspected app hosts the viewer itself over loopback HTTP at `http://127.0.0.1:50067`
-- **3D exploded view**: Visualize layer hierarchies in an exploded 3D view
-- **Live property editing**: Modify some properties live
-- **No external dependencies**: Uses only `Network.framework` and `CryptoKit` for the embedded server
+[![GitHub stars](https://img.shields.io/github/stars/everettjf/treescope?style=social&color=white)](https://github.com/everettjf/treescope/stargazers)
+- **Repository:** [everettjf/treescope](https://github.com/everettjf/treescope)
+- **Stack:** Swift / TypeScript | **License:** MIT
+- **Platform:** iOS, macOS
+- **Overview:** An open-source runtime view inspector for UIKit, AppKit, and SwiftUI viewed entirely inside a web browser. Serves as a zero-install alternative to Lookin with first-class SwiftUI support, unwrapping complex views, `@State`, and modifier pipelines.
 
-It is positioned as a free, open alternative to Lookin with first-class SwiftUI support [citation:8].
-**Best for:** iOS and macOS developers wanting a zero-install, browser-based view inspector with full SwiftUI support, accepting that it requires embedding the debug server in the app.
+### React Native Element Inspector
+[![GitHub stars](https://img.shields.io/github/stars/mabdinasira/react-native-element-inspector?style=social&color=white)](https://github.com/mabdinasira/react-native-element-inspector/stargazers)
+- **Repository:** [mabdinasira/react-native-element-inspector](https://github.com/mabdinasira/react-native-element-inspector)
+- **Stack:** React Native / TypeScript | **License:** MIT
+- **Platform:** iOS, Android (React Native)
+- **Overview:** An on-device "Inspect Element" developer utility for React Native apps. Tap any UI component to view CSS styles, toggle properties in real time, examine box-model margins/padding overlays, and jump to source code definitions without external native dependencies.
 
-### hm-ui-viewer
-**Stack:** Python / FastAPI / Web UI | **License:** Open Source (PyPI)
-hm-ui-viewer is a multi-platform UI layout viewer supporting **HarmonyOS and Android**, with a browser-based interface [citation:12]. Key features include:
-- **Dual-pane layout**: Screenshot on the left with element borders, collapsible control tree on the right
-- **Click linkage**: Clicking either the screenshot or tree node highlights the corresponding control
-- **XPath generation**: Automatically generates multiple candidate XPaths sorted by stability
-- **Offline file mode**: Upload screenshots and layout files for inspection
-- **Desktop window mode**: Uses pywebview for a native window without a browser
-- **Search**: Filter control nodes by type, text, or key
+### ViewScope
+[![GitHub stars](https://img.shields.io/github/stars/wangwanjie/ViewScope?style=social&color=white)](https://github.com/wangwanjie/ViewScope/stargazers)
+- **Repository:** [wangwanjie/ViewScope](https://github.com/wangwanjie/ViewScope)
+- **Stack:** Swift / AppKit | **License:** MIT
+- **Platform:** macOS, iOS
+- **Overview:** A macOS desktop utility for inspecting and visualizing UI view hierarchies, designed to help developers debug and analyze app layouts in real time with 2D/3D hierarchy wireframing and attribute panes.
 
-It requires Python 3.8+ with optional `hdc` (HarmonyOS) or `adb` (Android) for live device inspection [citation:12].
-**Best for:** Teams working with both HarmonyOS and Android wanting a unified inspector, accepting the Python/FastAPI stack.
+### UiHound
+[![GitHub stars](https://img.shields.io/github/stars/duzitian-code/UIHound?style=social&color=white)](https://github.com/duzitian-code/UIHound/stargazers)
+- **Repository:** [duzitian-code/UIHound](https://github.com/duzitian-code/UIHound)
+- **Stack:** Python / FastAPI / Web UI | **License:** Open Source
+- **Platform:** Android
+- **Overview:** A local browser-based Android UI debugging and automation workbench for HIL testing. Features interactive hierarchy inspection, unique locator generation, remote device control via scrcpy, pixel color sampling, and offline snapshot viewing.
 
-### react-native-element-inspector
-**Stack:** React Native / TypeScript | **License:** Open Source (npm)
-react-native-element-inspector is an **on-device element inspector for React Native**, providing an "Inspect Element" experience directly within the app [citation:13]. Key features include:
-- **Tap to select**: Tap any element to inspect its styles, with overlapping elements sorted smallest-first
-- **Live editing**: Edit style values inline, with changes applied instantly via React's reconciler
-- **Property toggling**: Enable/disable properties without deleting them
-- **Box model highlight**: Chrome DevTools-style overlay showing margin, padding, and content areas
-- **Source mapping**: Displays component name and source file location
-- **Zero native dependencies**: Pure TypeScript, works with React 18 and 19, Old Architecture and Fabric
-
-Wrap the root component with `<ElementInspector enabled={__DEV__}>` to enable [citation:13].
-**Best for:** React Native developers wanting an in-app inspector during development without external tools, accepting the React Native-specific scope.
+### ui-finder
+[![GitHub stars](https://img.shields.io/github/stars/kdiitg/ui_finder?style=social&color=white)](https://github.com/kdiitg/ui_finder/stargazers)
+- **Repository:** [kdiitg/ui_finder](https://github.com/kdiitg/ui_finder)
+- **Stack:** Python | **License:** Open Source
+- **Platform:** Android
+- **Overview:** A plug-and-play Python visual tool for inspecting Android application UIs directly from a connected device. Provides zero-setup dependency installation, click-to-highlight element selection, dropdown filtering by class/ID, and instant locator copying.
 
 ---
 
-## 📊 Comparison at a Glance
+## 📊 Feature Comparison Matrix
 
-| Software | License | Stack | Platform | Locator Generation | Live Device | Best For |
-|----------|---------|-------|----------|---------------------|-------------|----------|
-| **BrowserStack** | Proprietary | Cloud | Web + Native | (Check) | ✅ | BrowserStack users |
-| **Appium Inspector** | Proprietary | Desktop | Android/iOS | ✅ | ✅ (Appium) | Appium automation |
-| **UiHound** | Open Source | Python/FastAPI | Android | ✅ u2/XPath | ✅ | Local Android inspection + control |
-| **ViewScope** | MIT | Vue/FastAPI | Android | ✅ uiautomator2 | ✅ | Web-based Android inspector |
-| **uiautodev** | Open Source | Python/Binary | Android/iOS/Harmony | ✅ XPath | ✅ | Cross-platform inspection |
-| **ui-finder** | Open Source | Python | Android | ✅ | ✅ | Plug-and-play Android inspector |
-| **Smart XPath Locator** | MIT | Windows exe | Android | ✅ XPath | ✅ | Windows desktop + Excel export |
-| **Treescope** | MIT | Swift/TS | iOS/macOS | ❌ | ✅ (Embedded) | SwiftUI view inspection |
-| **hm-ui-viewer** | Open Source | Python/FastAPI | Android/Harmony | ✅ XPath | ✅ | Multi-platform (Harmony + Android) |
-| **react-native-element-inspector** | Open Source | React Native | iOS/Android | ❌ (Styles) | ✅ (In-app) | In-app React Native debugging |
+| Tool | Type | License | Primary Platforms | Locator Generation | Live Device / Remote Control | Runtime Inspection Mode |
+|------|------|---------|-------------------|--------------------|-----------------------------|-------------------------|
+| **[BrowserStack](https://www.browserstack.com/)** | SaaS | Commercial | Android, iOS, Web | ✅ Interactive | ✅ Real-device cloud | Cloud Streaming & DOM DevTools |
+| **[Sauce Labs](https://saucelabs.com/)** | SaaS | Commercial | Android, iOS, Web | ✅ XPath / ID | ✅ Real-device & Virtual | Cloud Session Debugger |
+| **[LambdaTest](https://www.lambdatest.com/)** | SaaS | Commercial | Android, iOS, Web | ✅ Selector Engine | ✅ Real-device & Virtual | Cloud Live DevTools |
+| **[Kobiton](https://kobiton.com/)** | SaaS | Commercial | Android, iOS | ✅ XPath / Appium | ✅ Cloud & Local Devices | Session Explorer Inspector |
+| **[Flipper](https://github.com/meta/flipper)** | Open Source | MIT | iOS, Android, RN | ❌ | ✅ USB / WiFi | Desktop Client + In-App SDK |
+| **[Appium Inspector](https://github.com/appium/appium-inspector)** | Open Source | Apache-2.0 | Android, iOS | ✅ Multi-strategy | ✅ Via Appium Server | Desktop GUI Inspector |
+| **[Lookin](https://github.com/hughkli/Lookin)** | Open Source | GPL-3.0 | iOS | ❌ | ✅ USB / WiFi | macOS Client + In-App Server |
+| **[WEditor](https://github.com/alibaba/web-editor)** | Open Source | Apache-2.0 | Android, iOS | ✅ uiautomator / XPath | ✅ ADB / WDA | Web Browser UI |
+| **[ViewMonitor](https://github.com/daisuke0131/ViewMonitor)** | Open Source | MIT | iOS | ❌ | ✅ On-device | In-App Overlay View |
+| **[uiautodev](https://github.com/codeskyblue/uiautodev)** | Open Source | MIT | Android, iOS, Harmony | ✅ XPath & Scripts | ✅ ADB / idb / hdc | Browser UI + Local Server |
+| **[Macaca App Inspector](https://github.com/macacajs/app-inspector)** | Open Source | MIT | Android, iOS | ✅ XPath & Macaca | ✅ USB Connection | Browser UI |
+| **[UInspector](https://github.com/YvesCheung/UInspector)** | Open Source | Apache-2.0 | Android | ❌ | ✅ On-device | In-App Floating Panel |
+| **[UI Viewer](https://github.com/codematrixer/ui-viewer)** | Open Source | MIT | Android, iOS, Harmony | ✅ XPath | ✅ USB Connection | Web Browser UI |
+| **[Cutaway](https://github.com/nothingsh/Cutaway)** | Open Source | MIT | iOS | ❌ | ✅ USB Connection | macOS Desktop 3D Window |
+| **[Android Inspector](https://github.com/cmzf/android-inspector)** | Open Source | Apache-2.0 | Android | ✅ XPath | ✅ ADB Live Sync | Embedded Web Server |
+| **[Treescope](https://github.com/everettjf/treescope)** | Open Source | MIT | iOS, macOS | ❌ | ✅ Loopback HTTP | Embedded Web Viewer |
+| **[React Native Element Inspector](https://github.com/mabdinasira/react-native-element-inspector)** | Open Source | MIT | React Native | ❌ | ✅ In-app | On-Screen Overlay |
+| **[ViewScope](https://github.com/wangwanjie/ViewScope)** | Open Source | MIT | macOS, iOS | ❌ | ✅ Local Mac | macOS App Window |
+| **[UiHound](https://github.com/duzitian-code/UIHound)** | Open Source | Proprietary | Android | ✅ u2 / XPath | ✅ scrcpy Remote | Web Browser UI |
+| **[ui-finder](https://github.com/kdiitg/ui_finder)** | Open Source | Proprietary | Android | ✅ Attributes | ✅ ADB Live Screen | Desktop Matplotlib Window |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Mobile DOM or UI Element Inspector tool that should be listed here, please open a pull request with:
+Contributions are warmly welcome! If you know of an actively maintained mobile DOM, view hierarchy, or layout inspector tool that should be included:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source.
-
-**Note on the open-source ecosystem:** The mobile UI inspection space is **strongest for Android**, with **UiHound**, **ViewScope**, and **uiautodev** offering mature, actively maintained web-based inspectors with locator generation and remote control capabilities [citation:2][citation:3][citation:6]. **ui-finder** is notable for its zero-setup philosophy [citation:5], while **Smart XPath Locator** fills a Windows desktop niche with Excel export [citation:1]. For **iOS**, **Treescope** is the leading open-source option, uniquely providing full SwiftUI inspection in a browser without installing a separate app [citation:8]. For **React Native** developers, **react-native-element-inspector** offers an in-app inspection experience that requires no external tooling [citation:13]. No single open-source tool covers all platforms equally well—the right choice depends on whether your primary target is Android, iOS, or a cross-platform framework.
+1. Fork this repository.
+2. Add the tool to the appropriate section in alphabetical or sorted order.
+3. Include the repository URL, star badge (`shields.io` social style), platform support, and a concise 1–2 sentence description.
+4. Submit a Pull Request with a clear description of why the tool is valuable to mobile engineers.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This collection is published under the [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) (CC0 1.0) Public Domain Dedication. Listed tools and third-party projects retain their respective trademarks and open-source licenses.
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+<p align="center">
+  <sub>Maintained with ❤️ for the mobile engineering, QA automation, and developer tooling community.</sub>
+</p>
